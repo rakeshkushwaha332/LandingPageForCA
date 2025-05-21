@@ -54,7 +54,7 @@
     <header class="w-full z-50">
         <!-- Top Header: hides on scroll -->
         <div id="topHeader" class="transition-transform duration-300 bg-white shadow">
-            <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="w-full px-4 py-1 flex flex-col md:flex-row items-center justify-between gap-2">
                 <!-- Logo Section -->
                 <div class="flex items-center gap-4">
                     <img class="h-16 w-auto" src="https://res.cloudinary.com/dqxsjxmu6/image/upload/v1743246096/j879pjiyypn6r9tmf9aw.jpg" alt="Company Logo">
@@ -108,13 +108,13 @@
     </header>
 
     <!-- Hero Section -->
-    <div id="hero" class="relative h-[70vh] w-full flex items-center justify-center overflow-hidden">
+    <div id="hero" class="relative h-[70vh] w-full flex items-end justify-center overflow-hidden">
         <div id="hero-bg1" class="absolute inset-0 hero-bg hero-slide z-0" style="background-image: url('public/images/index/6ea33cd5b203488dbbc347e290648b2c.jpg');"></div>
         <div id="hero-bg2" class="absolute inset-0 hero-bg hero-slide z-0" style="display:none;"></div>
         <div class="absolute inset-0 bg-black bg-opacity-30 z-10"></div>
-        <div class="relative z-20 flex flex-col items-center justify-center w-full h-full text-center px-4">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 drop-shadow-lg">Welcome to Bansal & Agrawal</h1>
-            <p class="text-lg md:text-xl text-white max-w-2xl mx-auto opacity-90 drop-shadow">
+        <div class="absolute bottom-0 left-0 right-0 z-20 flex flex-col items-center text-center px-2 pb-6 md:px-4 md:pb-10">
+            <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 drop-shadow-lg">Welcome to Bansal & Agrawal</h1>
+            <p class="text-base md:text-lg lg:text-xl text-white max-w-2xl mx-auto opacity-90 drop-shadow">
                 With over 25 years of expertise, we specialize in Subsidy Concessions & Grants Consultancy, Direct Taxation, Project Financing, Industrial Infrastructure Development, and beyond. Our firm serves as a seamless, one-stop destination, offering comprehensive solutions under a single roof. Supported by a skilled team and a commitment to excellence, we simplify complexities and unlock opportunities—helping businesses grow with confidence.
             </p>
         </div>
@@ -145,14 +145,6 @@
                     <div>
                         <h3 class="text-lg font-medium text-gray-700">Project Financing</h3>
                         <p class="text-sm text-gray-600">Preparation of Detailed Project Reports, and conducting other formalities to get project finance for various industries.</p>
-                    </div>
-                </div>
-
-                <div class="flex items-start space-x-6">
-                    <img src="public/images/index/0f7068_79dc98c0707b4d93b64baf99886d442b~mv2.png" alt="Law Icon" class="w-10 h-10"/>
-                    <div>
-                        <h3 class="text-lg font-medium text-gray-700">Certification and Due Diligence</h3>
-                        <p class="text-sm text-gray-600">Preparation of certificates and conducting due diligence in compliance to legal requirements.</p>
                     </div>
                 </div>
             </div>
@@ -199,18 +191,6 @@
             <h2 class="text-3xl font-semibold text-gray-800 mb-12">Industries we serve</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
                 <div>
-                    <img src="public/images/index/infra.jpg" alt="Infrastructure" class="w-48 h-32 object-cover mb-2">
-                    <p class="text-sm text-gray-700">Infrastructure</p>
-                </div>
-                <div>
-                    <img src="public/images/index/f8fe7ef82da74db4b5726e60f902c36e.jpg" alt="Pharmaceuticals" class="w-48 h-32 object-cover mb-2">
-                    <p class="text-sm text-gray-700">Pharmaceuticals</p>
-                </div>
-                <div>
-                    <img src="public/images/index/6ea33cd5b203488dbbc347e290648b2c.jpg" alt="Engineering" class="w-48 h-32 object-cover mb-2">
-                    <p class="text-sm text-gray-700">Engineering</p>
-                </div>
-                <div>
                     <img src="public/images/index/food.jpg" alt="Education" class="w-48 h-32 object-cover mb-2">
                     <p class="text-sm text-gray-700">Food Processing
                     </p>
@@ -252,8 +232,8 @@
    
 
     <!-- Footer -->
-    <footer class="bg-[#286187] text-white py-6">
-        <div class="max-w-7xl mx-auto px-6">
+    <footer class="bg-[#286187] text-white py-6 w-full">
+        <div class="w-full px-4">
             <p class="italic text-lg">Bansal's</p>
             <p class="text-sm">G-5, Ground Floor, 59-EB, Scheme No. 140</p>
             <p class="text-sm">Indore – 452016 (Madhya Pradesh) INDIA</p>
@@ -284,7 +264,14 @@
     <script>
         const heroImages = [
             'public/images/index/6ea33cd5b203488dbbc347e290648b2c.jpg',
-            'public/images/index/11062b_0f10d1a3bc8e4fb1ba089c42056efe9b~mv2.jpg'
+            'public/images/index/11062b_0f10d1a3bc8e4fb1ba089c42056efe9b~mv2.jpg',
+            'public/images/index/1744774881085.jpg',
+            'public/images/index/1744774881684.jpg',
+            'public/images/index/1744774882361.jpg'
+            
+        
+
+            
         ];
         let heroIndex = 0;
         let showingFirst = true;
