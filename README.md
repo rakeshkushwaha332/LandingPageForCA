@@ -1,30 +1,82 @@
-# Bansal & Agrawal Chartered Accountants Website
+# Personal Portfolio Website
 
-This is a static website for Bansal & Agrawal Chartered Accountants, built with plain HTML and Tailwind CSS (via CDN). All pages are fully static and require no backend or build tools.
+A modern, responsive personal portfolio website built with HTML, CSS, and JavaScript, styled using Tailwind CSS.
 
-## Folder Structure
+## 🚀 Features
+
+- Responsive design that works on all devices
+- Modern and clean UI with Tailwind CSS
+- Multiple sections:
+  - Home page with hero section
+  - About page with personal information
+  - Projects showcase
+  - Contact form
+- Smooth animations and transitions
+- Dark mode support
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Tailwind CSS
+- Font Awesome Icons
+- Google Fonts
+
+## 📦 Project Structure
 
 ```
-smabansal-main/
-├── index.html
-├── about.html
-├── service.html
-├── sector.html
-├── team.html
-├── contact.html
-└── public/
-    └── images/
-        └── index/
-            ├── ... (all image files)
+├── index.html          # Home page
+├── about.html         # About page
+├── projects.html      # Projects page
+├── contact.html       # Contact page
+├── css/
+│   └── output.css     # Compiled Tailwind CSS
+├── js/
+│   └── script.js      # Custom JavaScript
+├── images/            # Image assets
+├── tailwind.config.js # Tailwind configuration
+└── input.css         # Tailwind source CSS
 ```
 
-## Usage
+## 🚀 Getting Started
 
-1. **Open any HTML file** (e.g., `index.html`) directly in your browser.
-2. All styling is handled by Tailwind CSS via CDN, so no build step is required.
-3. All images are located in `public/images/index/` and referenced in the HTML as `public/images/index/filename.ext`.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/portfolio.git
+   ```
 
-## Notes
-- No server or Node.js dependencies are required.
-- You can deploy this site to any static hosting provider (GitHub Pages, Netlify, Vercel, etc.).
-- If you add new images, place them in `public/images/index/` and reference them with the correct path in your HTML. 
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Build the CSS:
+   ```bash
+   npm run build
+   ```
+
+4. Open `index.html` in your browser to view the website.
+
+## 🎨 Customization
+
+- Edit `tailwind.config.js` to customize the theme
+- Modify `input.css` to add custom styles
+- Update content in HTML files
+- Add your own images to the `images` directory
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👤 Author
+
+Your Name
+- GitHub: [@yourusername](https://github.com/yourusername)
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourusername)
+
+## 🙏 Acknowledgments
+
+- [Tailwind CSS](https://tailwindcss.com)
+- [Font Awesome](https://fontawesome.com)
+- [Google Fonts](https://fonts.google.com) 
