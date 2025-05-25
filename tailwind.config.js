@@ -1,20 +1,35 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./*.html",
-    "./public/**/*.html",
-    "./src/**/*.{js,jsx,ts,tsx}"
+    "./*.{html,js}",
+    "./src/**/*.{html,js}",
+    "./components/**/*.{html,js}"
   ],
   theme: {
     extend: {
       colors: {
-        primary: {
-          500: '#205b84',
+        primary: '#1a365d',
+        secondary: '#2d3748',
+        accent: '#4299e1',
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        heading: ['Poppins', 'sans-serif'],
+      },
+      animation: {
+        'float': 'float 2s ease-in-out infinite',
+        'walk': 'walk 2s ease-in-out infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-4px)' },
         },
-        secondary: {
-          500: '#22c55e',
+        walk: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
         },
-      }
+      },
     },
   },
   plugins: [],
