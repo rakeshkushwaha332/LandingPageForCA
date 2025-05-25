@@ -3,6 +3,30 @@
 @tailwind utilities;
 
 /* Custom styles */
+@layer base {
+  html {
+    @apply w-full h-full;
+  }
+  body {
+    @apply w-full h-full m-0 p-0 bg-gray-50 min-h-screen overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section {
+    @apply py-12 md:py-16;
+  }
+  
+  .heading {
+    @apply text-3xl md:text-4xl font-bold text-gray-900 mb-6;
+  }
+}
+
+/* Animations */
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-4px); }
@@ -75,4 +99,31 @@ footer {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+/* Contact page specific styles */
+.contact-form {
+    @apply bg-white shadow-lg p-6 rounded-xl;
+}
+
+.contact-info {
+    @apply flex flex-col space-y-6;
+}
+
+/* About page specific styles */
+.about-content {
+    @apply max-w-5xl mx-auto px-6 py-16;
+}
+
+.leader-section {
+    @apply bg-[#e5e7f2] py-16 px-6;
+}
+
+/* Sector page specific styles */
+.industry-list {
+    @apply space-y-2;
+}
+
+.industry-list li {
+    @apply text-gray-700;
 } 
