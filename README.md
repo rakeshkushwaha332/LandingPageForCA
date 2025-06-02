@@ -1,18 +1,18 @@
-# Personal Portfolio Website
+# Bansal & Agrawal Chartered Accountants Website
 
-A modern, responsive personal portfolio website built with HTML, CSS, and JavaScript, styled using Tailwind CSS.
+A professional website for Bansal & Agrawal Chartered Accountants, built with HTML, CSS, and JavaScript, styled using Tailwind CSS.
 
 ## 🚀 Features
 
 - Responsive design that works on all devices
 - Modern and clean UI with Tailwind CSS
 - Multiple sections:
-  - Home page with hero section
-  - About page with personal information
-  - Projects showcase
-  - Contact form
+  - Home page with company overview
+  - About page with company information
+  - Services offered
+  - Team members
+  - Contact information
 - Smooth animations and transitions
-- Dark mode support
 
 ## 🛠️ Technologies Used
 
@@ -28,22 +28,23 @@ A modern, responsive personal portfolio website built with HTML, CSS, and JavaSc
 ```
 ├── index.html          # Home page
 ├── about.html         # About page
-├── projects.html      # Projects page
+├── service.html       # Services page
+├── team.html         # Team page
 ├── contact.html       # Contact page
+├── sector.html       # Sector page
 ├── css/
-│   └── output.css     # Compiled Tailwind CSS
-├── js/
-│   └── script.js      # Custom JavaScript
-├── images/            # Image assets
+│   └── style.css     # Compiled Tailwind CSS
+├── images/           # Image assets
 ├── tailwind.config.js # Tailwind configuration
-└── input.css         # Tailwind source CSS
+└── src/
+    └── input.css     # Tailwind source CSS
 ```
 
 ## 🚀 Getting Started
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/yourusername/bansal-agrawal.git
    ```
 
 2. Install dependencies:
@@ -56,12 +57,20 @@ A modern, responsive personal portfolio website built with HTML, CSS, and JavaSc
    npm run build
    ```
 
-4. Open `index.html` in your browser to view the website.
+4. For development with live reload:
+   ```bash
+   npm run watch
+   ```
+
+5. For production build:
+   ```bash
+   npm run prod:build
+   ```
 
 ## 🎨 Customization
 
 - Edit `tailwind.config.js` to customize the theme
-- Modify `input.css` to add custom styles
+- Modify `src/input.css` to add custom styles
 - Update content in HTML files
 - Add your own images to the `images` directory
 
@@ -69,11 +78,9 @@ A modern, responsive personal portfolio website built with HTML, CSS, and JavaSc
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 👤 Author
+## 👥 Authors
 
-Your Name
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourusername)
+Bansal & Agrawal Chartered Accountants
 
 ## 🙏 Acknowledgments
 
